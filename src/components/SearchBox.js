@@ -1,6 +1,14 @@
 import React, {Component} from 'react';
 
 class SearchBox extends Component{
+
+    shouldComponentUpdate(nextProps, nextState){
+        if(this.props !== nextProps){
+            return false
+        }
+        return true
+    }
+
     render(){
         const {SearchChange} = this.props;
         return(

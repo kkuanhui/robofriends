@@ -1,9 +1,10 @@
 import React, { Fragment } from "react";
 import Card from "./Card";
 
-const CardList = ({ robots }) => {
-  return (
+const CardList = ({ robots, isPending}) => {
+  return(
     <Fragment>
+      {console.log('CardList', robots)}
       {robots.map((user, i) => {
         return (
           <Card
