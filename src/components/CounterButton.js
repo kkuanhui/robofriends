@@ -28,7 +28,10 @@ class CounterButton extends PureComponent{
         return(
             <Fragment>
                 {console.log('CounterButton')}
-                <button color={this.props.color} onClick={this.updateCount}>
+                <button
+                aria-label='Counter Button' 
+                color={this.props.color} 
+                onClick={this.updateCount}>
                     Count : {this.state.count}
                 </button>
             </Fragment>
